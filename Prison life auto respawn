@@ -1,0 +1,41 @@
+while wait() do 
+
+if game.Players.LocalPlayer.Character.Humanoid.Health < 0.10 then 
+
+local lastPos = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").position
+
+wait(0.3)
+
+if game.Players.LocalPlayer.TeamColor.Name == "Bright blue" then
+
+workspace.Remote.TeamEvent:FireServer("Bright blue")
+
+elseif game.Players.LocalPlayer.TeamColor.Name == "Bright orange" then
+
+workspace.Remote.TeamEvent:FireServer("Bright orange")
+
+elseif game.Players.LocalPlayer.TeamColor.Name == "Really red" then
+
+workspace.Remote.TeamEvent:FireServer("Bright blue")
+
+wait(0.4)
+
+local prevposition = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+
+wait(0.1)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-975, 112, 2055)
+
+wait(0.5)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevposition
+
+end
+
+wait(0.5)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(lastPos)
+
+end
+
+end
