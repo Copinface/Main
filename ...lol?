@@ -2,68 +2,6 @@ local Gun = "Remington 870"
 
 local Player = game.Players.LocalPlayer.Name
 
-game.Workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver[Gun].ITEMPICKUP)
-
-for i,v in pairs(game.Players[Player].Backpack:GetChildren()) do
-
-    if v.name == (Gun) then
-
-        v.Parent = game.Players.LocalPlayer.Character
-
-    end
-
-end
-
-Gun = game.Players[Player].Character[Gun]
-
-game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
-
-function FireGun(target)
-
-coroutine.resume(coroutine.create(function()
-
-local bulletTable = {}
-
-table.insert(bulletTable, {
-
-Hit = target,
-
-Distance = 100,
-
-Cframe = CFrame.new(0,1,1),
-
-RayObject = Ray.new(Vector3.new(0.1,0.2), Vector3.new(0.3,0.4))
-
-})
-
-game.ReplicatedStorage.ShootEvent:FireServer(bulletTable, Gun)
-
-wait()
-
-end))
-
-endlocal Gun = "Remington 870"
-
-local Player = game.Players.LocalPlayer.Name
-
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(813, 100, 2249)
-
-wait(0.3)
-
-local A_1 =  870"].ITEMPICKUP
-
-local Event = game:GetService("Workspace").Remote.ItemHandler
-
-Event:InvokeServer(A_1)
-
-wait(0.4)
-
-for i,v in  do
-
-    if v.name == (Gun) thenlocal Gun = "Remington 870"
-
-local Player = game.Players.LocalPlayer.Name
-
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(813, 100, 2249)
 
 wait(0.3)
@@ -125,24 +63,3 @@ FireGun()
 end
 
 end
-
-        v.Parent = 
-
-    end
-
-end
-
-Gun = ]
-
-
-
-function FireGun(target)
-
-
-local  = {}
-
-, {
-
-Hit = target,
-
-Distance = 100
