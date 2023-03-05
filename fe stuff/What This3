@@ -6,7 +6,7 @@ Methods:NewAttack("Ninja Flip", "z", 9587666975, .1, 6)
 Methods:NewAttack("Ninja Kick", "q", 9587618509, .1, 6)
 Methods:NewAttack("Ninja Punch", "e", 9343483349, .1, 6)
 Methods:NewAttack("Lunge Punch", "r", 8223123168, .1, 6)
---Methods:SystemMessage([[
+Methods:SystemMessage([[
 Controls:
 Z - Ninja Flip
 Q - Ninja Kick
