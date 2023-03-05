@@ -1,0 +1,21 @@
+local Methods = loadstring(game:HttpGet("https://raw.githubusercontent.com/Copinface/Main/main/fe%20stuff/What%20this2"))()
+Methods:SetWalkSpeed(30)
+Methods:SetIdleAnimation(9343474643, .1)
+Methods:SetWalkAnimation(4967135548, .1)
+Methods:NewAttack("Ninja Flip", "z", 9587666975, .1, 6)
+Methods:NewAttack("Ninja Kick", "q", 9587618509, .1, 6)
+Methods:NewAttack("Ninja Punch", "e", 9343483349, .1, 6)
+Methods:NewAttack("Lunge Punch", "r", 8223123168, .1, 6)
+--Methods:SystemMessage([[
+Controls:
+Z - Ninja Flip
+Q - Ninja Kick
+E - Ninja Punch
+R - Lunge Punch
+]])
+-- Methods:SetScriptCreator("3qxt#9919 & nil#7756")
+Methods:BodyPartFlingOnTouch("Right Arm")
+Methods:BodyPartFlingOnTouch("Left Arm")
+Methods:BodyPartFlingOnTouch("Right Leg")
+Methods:BodyPartFlingOnTouch("Left Leg")
+Methods:RunScript()
