@@ -1,13 +1,13 @@
-local mouse = game.Players.LocalPlayer:GetMouse()
-local TpTool = Instance.new("Tool")
-TpTool.Name = "Teleport Tool"
-TpTool.RequiresHandle = false
-TpTool.Parent = speaker.Backpack
-TpTool.Activated:Connect(function()
-local Char = game.Players.LocalPlayer.Character or workspace:FindFirstChild(game.Players.LocalPlayer.Name)
-local HRP = Char and Char:FindFirstChild("HumanoidRootPart")
-if not Char or not HRP then
-return warn("Failed to find HumanoidRootPart")
-end
-HRP.CFrame = CFrame.new(mouse.Hit.X, mouse.Hit.Y + 3, mouse.Hit.Z, select(4, HRP.CFrame:components()))
+mouse = game.Players.LocalPlayer:GetMouse()
+local time = 0
+local tweenservice = game:GetService("TweenService")
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Tp Tool"
+tool.ToolTip = "bypassed anti teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+tweenservice:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(time, Enum.EasingStyle.Linear), {CFrame = pos}):Play()
 end)
+tool.Parent = game.Players.LocalPlayer.Backpack
