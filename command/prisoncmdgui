@@ -45,5 +45,5 @@ closegui.TextColor3 = Color3.new(1, 1, 1)
 closegui.TextSize = 20
  
 closegui.MouseButton1Click:connect(function()
-    CMDSFRAME.Visible = false
+    CMDSFRAME:Destory()
 end)
