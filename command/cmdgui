@@ -40,14 +40,11 @@ closegui.Position = UDim2.new(0.995000005, 0, 0, 0)
 closegui.Size = UDim2.new(0.0545952693, 0, 0.0728644878, 0)
 closegui.Font = Enum.Font.SourceSansBold
 closegui.FontSize = Enum.FontSize.Size24
-closegui.Text = "+"
+closegui.Text = "X"
 closegui.TextColor3 = Color3.new(1, 1, 1)
 closegui.TextSize = 20
  
 closegui.MouseButton1Click:connect(function()
-if closegui.Text == "-" then
-ScrollingFrame.Visible = false
-elseif closegui.Text == "+" then
-ScrollingFrame.Visible = true
+CMDSFRAME.Visible = false
 end
 end)
