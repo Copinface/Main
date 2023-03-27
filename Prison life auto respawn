@@ -1,5 +1,7 @@
-while task.wait() do 
+_G.autorunning = true
 
+while task.wait() do 
+if _G.autorunning then
 if game.Players.LocalPlayer.Character.Humanoid.Health < 0.10 then 
 local lastPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 --game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").position
@@ -19,5 +21,6 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-975, 11
 end
 wait(0.5)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastPos
+end
 end
 end
