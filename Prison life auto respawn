@@ -1,4 +1,4 @@
-while wait() do 
+while task.wait() do 
 
 if game.Players.LocalPlayer.Character.Humanoid.Health < 0.10 then 
 
